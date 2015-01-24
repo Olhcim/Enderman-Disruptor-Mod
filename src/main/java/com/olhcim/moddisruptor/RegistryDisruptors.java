@@ -2,7 +2,6 @@ package com.olhcim.moddisruptor;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-
 import net.minecraft.entity.monster.EntityEnderman;
 
 

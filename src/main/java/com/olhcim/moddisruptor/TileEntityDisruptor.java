@@ -1,15 +1,7 @@
 package com.olhcim.moddisruptor;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-
 import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.world.World;
 
 public class TileEntityDisruptor extends TileEntity {
 	

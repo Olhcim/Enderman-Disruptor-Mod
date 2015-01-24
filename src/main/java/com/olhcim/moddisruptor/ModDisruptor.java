@@ -10,12 +10,8 @@ import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = ModDisruptor.MODID, version = ModDisruptor.VERSION)
 public class ModDisruptor
@@ -25,7 +21,7 @@ public class ModDisruptor
 
 	public static Block blockDisruptor;
 
-	@Instance("disruptor")
+	@Instance(MODID)
 	public static ModDisruptor instance;
 
 
@@ -44,12 +40,7 @@ public class ModDisruptor
 		GameRegistry.registerBlock(blockDisruptor, "disruptor");
 		GameRegistry.registerTileEntity(TileEntityDisruptor.class, "tileEntityDisruptor");
 		
-		GameRegistry.addShapedRecipe(new ItemStack(blockDisruptor), new Object[]{
-			"IOI",
-			"OEO",
-			"IOI",
-			'I' ,Blocks.iron_bars, 'O', Blocks.obsidian, 'E', Items.ender_eye
-			});
+		GameRegistry.addShapedRecipe(new ItemStack(blockDisruptor), "IOI", "OEO", "IOI", 'I',Blocks.iron_bars, 'O', Blocks.obsidian, 'E', Items.ender_eye);
 		
 		MinecraftForge.EVENT_BUS.register(new EventHandlerTeleport());
 	}
