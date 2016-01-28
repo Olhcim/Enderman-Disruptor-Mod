@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
@@ -17,7 +18,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModDisruptor
 {
 	public static final String MODID = "moddisruptor";
-	public static final String VERSION = "0.1";
+	public static final String VERSION = "0.2";
+
+	public static CreativeTabs creativeTab;
 
 	public static Block blockDisruptor;
 
@@ -28,6 +31,10 @@ public class ModDisruptor
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		creativeTab = new CreativeTabs("tab_" + MODID) {
+			@Override public Item getTabIconItem() { return Item.getItemFromBlock(blockDisruptor); }
+		};
+
 		blockDisruptor = new BlockDisruptor(Material.ground)
 				.setHardness(0.5f)
 				.setStepSound(Block.soundTypeMetal)
@@ -35,12 +42,20 @@ public class ModDisruptor
 				.setCreativeTab(CreativeTabs.tabMisc)
 				.setBlockTextureName(MODID + ":" + "disruptor")
 				.setLightLevel(0.5f)
-				.setResistance(2000.0F);
+				.setResistance(2000.0F)
+				.setCreativeTab(creativeTab);
 		
 		GameRegistry.registerBlock(blockDisruptor, "disruptor");
 		GameRegistry.registerTileEntity(TileEntityDisruptor.class, "tileEntityDisruptor");
 		
-		GameRegistry.addShapedRecipe(new ItemStack(blockDisruptor), "IOI", "OEO", "IOI", 'I',Blocks.iron_bars, 'O', Blocks.obsidian, 'E', Items.ender_eye);
+		GameRegistry.addShapedRecipe(new ItemStack(blockDisruptor),
+				"IBI",
+				"BEB",
+				"ITI",
+				'I',Blocks.iron_block,
+				'B', Items.enchanted_book,
+				'E', Items.ender_eye,
+				'T', Blocks.enchanting_table);
 		
 		MinecraftForge.EVENT_BUS.register(new EventHandlerTeleport());
 	}

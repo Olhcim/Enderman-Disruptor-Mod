@@ -17,13 +17,13 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10_0.1"
+version = "1.7.10_0.2"
 group= "com.olhcim.moddisruptor" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "ModDisruptor"
 
 minecraft {
-    version = "1.7.10-10.13.2.1230"
-    runDir = "eclipse"
+    version = "1.7.10-10.13.4.1558-1.7.10"
+    runDir = "run"
 }
 
 dependencies {
@@ -61,3 +61,5 @@ processResources
         exclude 'mcmod.info'
     }
 }
+
+idea { module { inheritOutputDirs = true } }
