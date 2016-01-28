@@ -1,0 +1,43 @@
+[header=1]Enderman Disruptor 1.8.9 v0.2[/header]
+
+[left]This mod adds a new block, the Enderman Disruptor. When placed, the block stops all Endermen from teleporting in a 16 block radius.[/left]
+
+[left]Power the block with a redstone signal to view the coverage. Note it still works without a redstone signal.[/left]
+
+[spoiler=Crafting Recipe]
+[img]http://i.imgur.com/KffU9rq.png[/img]
+
+[/spoiler]
+
+[center][u]Note[/u]: This mod is for Minecraft Forge 1.8.9
+
+[u]Please report bugs[/u] by leaving a comment.[/center]
+
+[spoiler=BY DOWNLOADING THIS MOD, YOU AGREE THAT:]
+[b]- You will not re-upload this mod and its files. 
+- You will not distribute this mod in any way. 
+- You will not claim this mod or any of its assets as your own. 
+- You will provide a link to this page (http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/2325008) and give credit to the creator (Olhcim) if it is showcased on an external website.[/b] 
+ 
+[u]The Only exception regarding distribution:[/u] you may include this mod in any modpack as long as credit is given to the creator (Olhcim).[/spoiler]
+
+[center][b]Latest Download: [/b][url=https://dl.dropboxusercontent.com/s/9z7wh31anrm9pce/ModDisruptor-1.8.9_0.2.jar]Direct[/url] | [url=http://www.planetminecraft.com/mod/enderman-disruptor]Plant Minecraft[/url]
+
+[b]Source Code[/b]: [url=https://github.com/Olhcim/Enderman-Disruptor-Mod]Github[/url][/center]
+
+[spoiler=Old Versions & Changelog]
+[url=https://dl.dropboxusercontent.com/s/9z7wh31anrm9pce/ModDisruptor-1.8.9_0.2.jar][b]1.8.9 v0.2[/b]
+[/url]
+- Ported to Forge 1.8.9
+- Added the ability to see the disruptor coverage by powering the block with a redstone signal.
+- Increased the cost of the disruptor, by changing the recipe to: 4 iron blocks in the corners, an eye of ender in the middle, an enchanting table at the bottom, and any 3 enchanted books at the remaining 3 spots (left, right top).
+[img width='200']http://i.imgur.com/KffU9rq.png[/img]
+
+[url=https://dl.dropboxusercontent.com/s/83m361d29c20wov/ModDisruptor-1.7.10_0.1.jar]
+[b]1.7.10 v0.1[/b]
+[/url]
+- initial release
+- craft enderman disruptor with 4 iron bars at the corners, 4 obsidian at the edges, and an eye of ender in the middle
+[img width='200']http://imgur.com/lae7XXF.png[/img]
+
+[/spoiler]
