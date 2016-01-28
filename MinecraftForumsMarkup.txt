@@ -35,7 +35,7 @@
 
 [url=https://dl.dropboxusercontent.com/s/76pyzqhyx34pbls/ModDisruptor-1.7.10_0.2.jar][b]1.7.10 v2.0 (backport)[/b]
 [/url]
-- Dee above for information, similar in function to: 1.8.9 v0.2
+- See above for information, similar in function to: 1.8.9 v0.2
 - Done on request for Minecraft Forum User: 6210classick
 
 [url=https://dl.dropboxusercontent.com/s/83m361d29c20wov/ModDisruptor-1.7.10_0.1.jar]
