@@ -1,7 +1,7 @@
 [
 {
   "modid": "moddisruptor",
-  "name": "Disruptor Mod",
+  "name": "Enderman Disruptor Mod",
   "description": "Adds a simple block that disrupts Endermen and stops them from teleporting.",
   "version": "${version}",
   "mcversion": "${mcversion}",
