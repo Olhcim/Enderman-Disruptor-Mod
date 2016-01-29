@@ -1,6 +1,0 @@
-{
-  "parent": "moddisruptor:block/block_standard",
-  "textures": {
-    "all": "moddisruptor:blocks/disruptor"
-  }
-}
