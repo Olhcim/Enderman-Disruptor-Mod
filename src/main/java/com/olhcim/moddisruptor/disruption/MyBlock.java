@@ -1,5 +1,6 @@
-package com.olhcim.moddisruptor;
+package com.olhcim.moddisruptor.disruption;
 
+import com.olhcim.moddisruptor.ModDisruptor;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;

@@ -21,7 +21,7 @@ plugins {
 }
 */
 
-version = "1.8.9_0.2"
+version = "0.3.0"
 group= "com.olhcim.moddisruptor" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "ModDisruptor"
 
