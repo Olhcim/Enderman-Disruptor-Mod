@@ -1,4 +1,4 @@
-package com.olhcim.moddisruptor;
+package com.olhcim.moddisruptor.disruption;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;

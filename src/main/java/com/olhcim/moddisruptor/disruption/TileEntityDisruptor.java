@@ -1,4 +1,4 @@
-package com.olhcim.moddisruptor;
+package com.olhcim.moddisruptor.disruption;
 
 import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.tileentity.TileEntity;
@@ -6,23 +6,21 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ITickable;
 
+import java.util.Random;
+
 public class TileEntityDisruptor extends TileEntity  implements ITickable {
 
+    private Random rand;
+
     public TileEntityDisruptor() {
-        register();
-    }
-
-    public void register() {
         RegistryDisruptors.register(this);
-    }
+        rand = new Random();
 
-    public void unregister() {
-        RegistryDisruptors.unregister(this);
     }
 
     @Override
     public void onChunkUnload() {
-        unregister();
+        RegistryDisruptors.unregister(this);
     }
 
     public boolean isNear(EntityEnderman e) {
@@ -61,6 +59,6 @@ public class TileEntityDisruptor extends TileEntity  implements ITickable {
     }
 
     private float random(float a, float b) {
-        return (float)Math.random() * (b - a) + a;
+        return rand.nextFloat() * (b - a) + a;
     }
 }

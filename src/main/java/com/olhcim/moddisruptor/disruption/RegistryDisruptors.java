@@ -1,8 +1,8 @@
-package com.olhcim.moddisruptor;
+package com.olhcim.moddisruptor.disruption;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
+import com.olhcim.moddisruptor.ModDisruptor;
 import net.minecraft.entity.monster.EntityEnderman;
 
 
@@ -19,21 +19,21 @@ public class RegistryDisruptors {
     }
 
     public static boolean isEntityNear(EntityEnderman e) {
-        for (TileEntityDisruptor te : disruptors) {
+        for (TileEntityDisruptor te : new ArrayList<TileEntityDisruptor>(disruptors)) {
             if (te.isNear(e)) {
-                return true;
+                if (validate(te)) {
+                    return true;
+                }
             }
         }
         return false;
     }
 
-    public static void validate() {
-        Iterator<TileEntityDisruptor> iter = disruptors.iterator(); //avoids cuncrent modification exception
-        while (iter.hasNext()) {
-            TileEntityDisruptor te = iter.next();
-            if (te.isInvalid() || te.getWorld().getBlockState(te.getPos()).getBlock() != ModDisruptor.blockDisruptor) {
-                iter.remove();
-            }
+    public static boolean validate(TileEntityDisruptor te) {
+        if (te.isInvalid() || te.getWorld().getBlockState(te.getPos()).getBlock() != ModDisruptor.blockDisruptor) {
+            RegistryDisruptors.unregister(te);
+            return false;
         }
+        return true;
     }
 }

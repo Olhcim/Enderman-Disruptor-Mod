@@ -33,6 +33,11 @@
 - Increased the cost of the disruptor, by changing the recipe to: 4 iron blocks in the corners, an eye of ender in the middle, an enchanting table at the bottom, and any 3 enchanted books at the remaining 3 spots (left, right top).
 [img width='200']http://i.imgur.com/KffU9rq.png[/img]
 
+[url=https://dl.dropboxusercontent.com/s/76pyzqhyx34pbls/ModDisruptor-1.7.10_0.2.jar][b]1.7.10 v0.2 (backport)[/b]
+[/url]
+- See above for information, similar in function to: 1.8.9 v0.2
+- Done on request for Minecraft Forum User: 6210classick
+
 [url=https://dl.dropboxusercontent.com/s/83m361d29c20wov/ModDisruptor-1.7.10_0.1.jar]
 [b]1.7.10 v0.1[/b]
 [/url]
