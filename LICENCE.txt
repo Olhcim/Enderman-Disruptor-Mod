@@ -3,13 +3,15 @@ ALL RIGHTS RESERVED:
 - You may not claim this as your own.
 - You may not claim any of the mods assets as your own.
 
-DISTRIBUTION OF COMPILED CODE:
-- Compiled code, in the form of the .jar file or containing the .jar file, may NOT be redistributed or reuploaded to an external website or repository. NO EXCEPTIONS
+NO DISTRIBUTION, NO REUPLOADING - ONLY ONE DOWNLOAD LOCATION BEING THE OFFICIAL CURSEFORGE PAGE:
+- The mod including assets, source code and compiled code, may NOT be redistributed in any way, nor may they be reuploaded to any external website, server or repository. NO EXCEPTIONS.
+- Any external listing of the mod may ONLY provide download links that direct to the official Curseforge downloads page.
+ @ The only allowed downloads page: (http://minecraft.curseforge.com/projects/enderman-disruptor/files).
 
-MODPACKS:
+MODPACKS ARE ALLOWED:
 - The mod my be distributed within a modpack, so long as credit to the owner (Olhcim) is given, and a link to the official CurseForge mod listing is given.
 
-EXTERNAL LISTINGS:
+NO EXTERNAL LISTINGS:
 - You must get permission before you can list this mod on an external website - no exceptions.
 - Unofficial listings must link back to the official CurseForge page.
 - Unofficial listings must clearly state that the mod was created by Olhcim.
@@ -18,6 +20,7 @@ EXTERNAL LISTINGS:
  @ Minecraft Forums (http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/2325008)
  @ Curse Forge (http://minecraft.curseforge.com/projects/enderman-disruptor/)
  @ Planet Minecraft (http://www.planetminecraft.com/mod/enderman-disruptor)
+ @ Votable (http://www.votable.com/p/Jkz)
  @ GitHub (https://github.com/Olhcim/Enderman-Disruptor-Mod)
 
 SOURCE CODE:
